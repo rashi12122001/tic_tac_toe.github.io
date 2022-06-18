@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap"
+      rel="stylesheet"
+    />
+    <title>tic tac toe</title>
+  </head>
+  <body>
+    <nav id="navi">
+      <button onclick="appear()" id="hide">*</button>
+      <ul id="nav">
+        <li><a href="#" id="main"> MyTicTactoe.com</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="game">
+      <div class="welcomemessage">
+        <h1>welcome to the game</h1>
+      </div>
+      <div class="line"></div>
+      <div class="container">
+        <div class="box bt0 bl0">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box bt0">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box bt0 br0">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box bl0">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box br0">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box bl0 bb0">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box bb0">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box br0 bb0">
+          <span class="boxtext"></span>
+        </div>
+      </div>
+      <div class="gameinfo">
+        <div>
+          <span class="info">turn for X </span>
+          <button onclick="clearme()" id="reset">Reset</button>
+        </div>
+      </div>
+      <div class="imgbox">
+        <img src="sailor-moon-happy.gif" alt="gif" />
+      </div>
+    </div>
+    <script src="
+    index.js"></script>
+  </body>
+</html>

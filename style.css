@@ -1,0 +1,174 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+body {
+  background: #b7858e;
+}
+
+#navi {
+  z-index: 1;
+  margin: 0px;
+  padding-top: 3px;
+  background: black;
+  width: 100vw;
+}
+#nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  align-items: center;
+  padding: 5px;
+}
+li {
+  margin-right: 4%;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+#main {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+.welcomemessage {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: "Baloo Thambi 2";
+}
+.game {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 8vw);
+  grid-template-rows: repeat(3, 8vw);
+}
+.box {
+  border: 2px solid black;
+  font-size: 8vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  background-color: rgb(178 146 209);
+}
+.gameinfo {
+  padding: 0px 30px;
+  margin-top: 21px;
+  margin-bottom: 5px;
+}
+.info {
+  font-family: "Baloo Thambi 2";
+  font-size: 1.4rem;
+}
+.line {
+  background-color: black;
+  opacity: 0.7;
+  top: 112px;
+  height: 16px;
+  width: 30vw;
+  visibility: hidden;
+  position: absolute;
+  transition: width 1s ease-in-out;
+}
+.imgbox img {
+  /* visibility: hidden; */
+  display: block;
+  width: 0;
+  margin-top: 5px;
+  transition: width 1s ease-in-out;
+}
+.bt0 {
+  border-top: 0;
+}
+.bb0 {
+  border-bottom: 0;
+}
+.bl0 {
+  border-left: 0;
+}
+.br0 {
+  border-right: 0;
+}
+#reset {
+  margin-left: 6px;
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  font-family: cursive;
+}
+#reset:hover {
+  background: blueviolet;
+}
+#hide {
+  cursor: pointer;
+  display: none;
+  background: black;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+}
+.rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+.gaps {
+  font-family: "Baloo Thambi 2";
+  font-size: 1.1rem;
+  margin: 10px;
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  #nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  #hide {
+    display: block;
+  }
+  #main {
+    font-size: 1.1rem;
+    margin-left: 0;
+    padding-bottom: 5px;
+  }
+  .gaps {
+    font-size: 0.9rem;
+  }
+}
+#btni {
+  display: block;
+  margin: auto;
+  background: black;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  font-family: cursive;
+}
+#btni:hover {
+  background: blueviolet;
+}
